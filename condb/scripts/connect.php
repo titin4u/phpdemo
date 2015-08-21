@@ -1,6 +1,6 @@
 <?php
   mysql_connect("localhost", 
-                "root", "donglihan")
+                "dong", "donglihan")
     or die("<p>Error connecting to database: " . 
            mysql_error() . "</p>");
 
@@ -13,7 +13,8 @@
   echo "<p>Connected to MySQL, using database your-database-name.</p>";
   
   $result = mysql_query("SHOW TABLES;");
-
+  //$sql = mysql_query("SELECT * FROM $result;");
+  
   if (!$result) {
     die("<p>Error in listing tables: " . mysql_error() . "</p>");
   }
@@ -23,5 +24,7 @@
   while ($row = mysql_fetch_row($result)) {
     echo "<li>Table: {$row[0]}</li>";
   }
+
+  
   echo "</ul>";
 ?>
