@@ -1,7 +1,7 @@
 <?php
 // Database connection constants
-define("DATABASE_HOST", "your.database.host");
-define("DATABASE_USERNAME", "your-username");
-define("DATABASE_PASSWORD", "your-password");
-define("DATABASE_NAME", "your-database-name");
+define("DATABASE_HOST", "localhost");
+define("DATABASE_USERNAME", "dong");
+define("DATABASE_PASSWORD", "donglihan");
+define("DATABASE_NAME", "test");
 ?>
